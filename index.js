@@ -108,10 +108,8 @@ function endGame() {
 function moveDodger(key) {
   
     if(key.which === LEFT_ARROW){
-      key.preventDefault();
-      moveDodgerLeft();
-      //window.requestAnimationFrame(moveDodgerLeft);
-      key.stopPropagation();
+
+      window.requestAnimationFrame(moveDodgerLeft);
     }
     else if(key.which === RIGHT_ARROW){
       key.preventDefault();
